@@ -139,7 +139,7 @@ a {
 .nav-divider { 
     height: 28px; 
     width: 1px; 
-    background: var(--accent); 
+    background: var(--primary); 
     opacity: .6; 
     margin: 0 5px; 
 }
