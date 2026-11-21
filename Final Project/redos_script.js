@@ -104,12 +104,12 @@ const chart =
             },
 
             y: {
-              type: "logarithmic",
+              type: "linear",
               ticks: {},
               grid: {},
               title: {
                 display: true,
-                text: "Execution Time (ms, log scale)"
+                text: "Execution Time (ms)"
               }
             }
           },
@@ -176,7 +176,7 @@ function updateChart(key, mode, time, isTimeout = false) {
   chart.data.datasets[row].data[col] =
     isTimeout
       ? TIMEOUT_MS
-      : (Number.isFinite(time) && time > 0 ? time : null);
+      : (Number.isFinite(time) && time >= 0 ? time : null);
 
   chart.update("none");
 }
