@@ -73,7 +73,7 @@ section h2 {
 
 .site-header { 
     position: sticky; 
-    top: 0; z-index: 20; 
+    top: 0;
     z-index: 20;
     padding: 18px 0 8px; 
 }
@@ -137,11 +137,11 @@ a {
 }
 
 .nav-divider { 
-    height: 28px; 
-    width: 1px; 
-    background: var(--primary); 
-    opacity: .6; 
-    margin: 0 5px; 
+    height: 28px;
+    width: 1px;
+    background: var(--primary);
+    opacity: .6;
+    margin: 0 5px;
 }
 
 .theme-toggle {
@@ -300,7 +300,7 @@ a {
     border: 1px solid var(--border);
     border-radius: 13px;
     background-color: var(--labs-card);
-    box-shadow: 0 4px 15px --shadow;
+    box-shadow: 0 4px 15px var(--shadow);
     transition: transform 0.25s, box-shadow 0.25s;
 }
 
@@ -386,6 +386,7 @@ footer {
 }
 
 @media (max-width: 992px) {
+
     .navbar {
         width: calc(100% - 40px);
     }
@@ -394,9 +395,30 @@ footer {
         padding: 9px 13px;
         font-size: 0.9rem;
     }
+
+    .labs-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+        padding: 18px;
+    }
+
+    .labs {
+        padding: 22px;
+    }
+
+    .lab-title {
+        padding-left: 25px;
+        font-size: 2.2rem;
+    }
+
+    .works {
+        gap: 30px;
+        padding: 40px 25px;
+    }
 }
 
 @media (max-width: 700px) {
+
     body {
         font-size: 15px;
     }
@@ -411,7 +433,6 @@ footer {
         padding: 7px 10px;
         border-radius: 16px;
         gap: 8px;
-        flex-wrap: nowrap;
     }
 
     .home-link {
@@ -426,7 +447,6 @@ footer {
 
     .nav-right {
         gap: 5px;
-        flex-wrap: nowrap;
     }
 
     .nav-link {
@@ -453,9 +473,96 @@ footer {
     .theme-toggle span {
         font-size: 11px;
     }
+
+    .labs-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+        padding: 15px;
+        margin-top: 12px;
+    }
+
+    .labs {
+        width: 100%;
+        min-width: 0;
+        padding: 22px 20px;
+        border-radius: 14px;
+    }
+
+    .lab-title {
+        padding: 0 15px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .labs h2 {
+        font-size: 1.4rem;
+    }
+
+    .labs h3 {
+        font-size: 1.1rem;
+    }
+
+    .labs h4 {
+        font-size: 1rem;
+    }
+
+    .labs > p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .labs > a {
+        font-size: 1rem;
+        padding-top: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .diff-med,
+    .diff-hard {
+        margin-left: 8px;
+        font-size: 11px;
+        padding: 4px 9px;
+    }
+
+    .resources-list {
+        padding-left: 20px;
+        font-size: 0.95rem;
+    }
+
+    .web-title {
+        padding: 40px 15px 30px;
+    }
+
+    .about {
+        padding: 40px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .about-content > p:not(.subtitle) {
+        font-size: 16px;
+    }
+
+    .works {
+        flex-direction: column;
+        gap: 20px;
+        padding: 35px 20px;
+        font-size: 16px;
+    }
+
+    .works h2 {
+        font-size: 2rem;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: 480px) {
+
     .navbar {
         width: calc(100% - 20px);
         padding: 7px 8px;
@@ -489,9 +596,42 @@ footer {
     .theme-toggle span {
         font-size: 10px;
     }
+
+    .labs-grid {
+        padding: 10px;
+        gap: 13px;
+    }
+
+    .labs {
+        padding: 19px 16px;
+    }
+
+    .lab-title {
+        font-size: 1.7rem;
+        padding: 0 8px;
+    }
+
+    .labs h2 {
+        font-size: 1.25rem;
+    }
+
+    .labs > p {
+        font-size: 0.95rem;
+    }
+
+    .labs > a {
+        font-size: 0.92rem;
+    }
+
+    .diff-med,
+    .diff-hard {
+        margin-left: 4px;
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 380px) {
+
     .navbar {
         width: calc(100% - 14px);
         padding: 6px;
@@ -528,5 +668,21 @@ footer {
 
     .theme-toggle span {
         font-size: 9px;
+    }
+
+    .labs-grid {
+        padding: 8px;
+    }
+
+    .labs {
+        padding: 17px 13px;
+    }
+
+    .labs h2 {
+        font-size: 1.15rem;
+    }
+
+    .lab-title {
+        font-size: 1.5rem;
     }
 }
