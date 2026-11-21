@@ -928,6 +928,10 @@ footer {
         font-size: 11px;
     }
 
+    .theme-toggle span {
+        font-size: 11px;
+    }
+
     .lab-hero {
         padding: 40px 15px 30px;
     }
